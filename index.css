@@ -1,0 +1,272 @@
+/* CSS sections
+add the sections here!!
+
+*/
+
+
+.lateef-extralight {
+    font-family: "Lateef", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .lateef-light {
+    font-family: "Lateef", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lateef-regular {
+    font-family: "Lateef", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lateef-medium {
+    font-family: "Lateef", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .lateef-semibold {
+    font-family: "Lateef", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .lateef-bold {
+    font-family: "Lateef", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lateef-extrabold {
+    font-family: "Lateef", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+
+
+html, body {
+    font-size: 16px;
+    font-family: "Lateef", sans-serif;     
+    
+}
+
+.navbar { 
+    display: flex; 
+    width: auto;
+    min-height: 5.3125rem;   
+    background-color: black;
+    align-items: center; 
+}
+
+.navul {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+}
+
+.nav-box {
+    
+    display: flex;
+    flex-shrink: 2;
+    
+}
+
+.navbar p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.western-wall {
+    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/western-wall.avif");
+    width: 100%;
+    height: 30.375rem;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex;
+    color: white;
+    
+}
+
+.western-wall::before {
+    content: "";
+    background-color: hsla(24, 29%, 17%, 0.70);
+    position: absolute;
+    height: 30.375rem;
+    width: 100%;
+}
+
+.z-index-front {
+    display: inline-flex;
+    position: relative; 
+    z-index: 2; 
+    flex-direction: column;
+    max-width: 40.375rem;
+    top: 3.125rem;
+    margin-left: 3rem;
+}
+
+.western-wall h1 {
+    font-size: 4.375rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.western-wall h2 {
+    font-size: 3.125rem;
+    font-weight: 280;
+    line-height: 3.125rem;
+}
+
+.western-wall h2 span {
+    font-weight: 500;
+}
+
+.central-images {
+    display: flex;
+    justify-content: space-around;
+    min-height: 27.03125rem;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    display: inline-flex;
+    position: relative;
+    top: 3.375rem;
+    padding-top: 28px;
+    
+}
+
+.search-box::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 50%; 
+        transform: translateX(-50%); /* Adjust to center */
+        width: 7.5625rem; 
+        height: 0.1875rem; 
+        background-color: #ff0000; 
+        z-index: 1; 
+    }
+
+.tora-element {
+    display: flexbox;
+}
+
+.image-element {
+    width: 284px;
+    height: 284px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.toraimg {
+    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/tora.jpg");
+}
+
+.prophetsimg {
+    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/profetas.jpg");
+}
+
+.writingsimg {
+    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/escritos.jpg");
+}
+
+.text-box-element {
+    display: inline-flex;
+    margin-top: 1rem;
+    border: solid 0.005988023952rem hsla(0, 0%, 0%, 0.10);
+    min-width: 17.75rem;
+    height: 3.0625rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.25rem 0.25rem hsla(0, 0%, 0%, 0.25);
+}
+
+.text-box-element p {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+.comment-box {
+    display: flex;
+    max-width: 86.25rem;
+    min-height: 30.625rem;
+    margin: 70px auto;
+    position: relative;
+    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/vintageBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 54.2px;
+    }
+
+
+.z-index-front-comment-box {
+    background-color: white;
+    width: 24.875rem;
+    height: 24.875rem; 
+    margin: 2.875rem 0 2.875rem 2.0625rem;
+
+}
+
+.z-index-front-comment-box p {
+    z-index: 2;
+    color: black;
+    font-size: 1.875rem;
+    font-weight: 340;
+    margin: 1.875rem 1.3125rem;
+    line-height: 2.5rem;
+}
+
+.footer {
+    width: 100%;
+    min-height: 5.875rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer p {
+    color: white;
+    font-size: 30px;
+}
+
+/* @media only screen and (min-width: 350px) and (max-width: 700px) {
+    html{
+        font-size: 14px;
+    }
+} */
+
+@media only screen and (min-width: 590px) and (max-width: 870px) {
+    .writings-elements-with-superior-line {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 268px) and (max-width: 610px) {
+    .search-box {
+        margin-left: 10px;
+    }
+
+    .prophets-elements-with-superior-line {
+        margin-top: 50px;
+    }
+
+    .writings-elements-with-superior-line {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+}
