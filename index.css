@@ -1,9 +1,15 @@
 /* CSS sections
-add the sections here!!
-
+1.-Fonts import
+2.-html and body font-bases 
+4.-Western-wall section
+3.-Navbar section
+5.-Central images section
+6.-Comment box section
+7.-Footer section
+8.-Media queries for different screen sizes
 */
 
-
+/* 1.-Fonts import */
 .lateef-extralight {
     font-family: "Lateef", serif;
     font-weight: 200;
@@ -46,14 +52,13 @@ add the sections here!!
     font-style: normal;
   }
 
-
-
+/* 2.-html and body font-bases */
 html, body {
     font-size: 16px;
     font-family: "Lateef", sans-serif;     
-    
 }
 
+/* 3.-Navbar section */
 .navbar { 
     display: flex; 
     width: auto;
@@ -69,10 +74,8 @@ html, body {
 }
 
 .nav-box {
-    
     display: flex;
     flex-shrink: 2;
-    
 }
 
 .navbar p {
@@ -80,8 +83,9 @@ html, body {
     color: white;
 }
 
+/* 4.-Western-wall section */
 .western-wall {
-    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/western-wall.avif");
+    background-image: url("western-wall.avif");
     width: 100%;
     height: 30.375rem;
     background-size: cover; 
@@ -89,8 +93,7 @@ html, body {
     background-repeat: no-repeat; 
     position: relative;
     display: flex;
-    color: white;
-    
+    color: white;   
 }
 
 .western-wall::before {
@@ -115,18 +118,20 @@ html, body {
     font-size: 4.375rem;
     font-weight: 600;
     margin-bottom: 20px;
+    letter-spacing: -1.5px;
 }
 
 .western-wall h2 {
     font-size: 3.125rem;
     font-weight: 280;
-    line-height: 3.125rem;
+    line-height: 4rem;
 }
 
 .western-wall h2 span {
     font-weight: 500;
 }
 
+/* 5.-Central images section */
 .central-images {
     display: flex;
     justify-content: space-around;
@@ -138,8 +143,7 @@ html, body {
     display: inline-flex;
     position: relative;
     top: 3.375rem;
-    padding-top: 28px;
-    
+    padding-top: 28px;   
 }
 
 .search-box::before {
@@ -159,8 +163,8 @@ html, body {
 }
 
 .image-element {
-    width: 284px;
-    height: 284px;
+    min-width: 284px;
+    min-height: 284px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -168,23 +172,23 @@ html, body {
 }
 
 .toraimg {
-    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/tora.jpg");
+    background-image: url("tora.jpg");
 }
 
 .prophetsimg {
-    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/profetas.jpg");
+    background-image: url("profetas.jpg");
 }
 
 .writingsimg {
-    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/escritos.jpg");
+    background-image: url("escritos.jpg");
 }
 
 .text-box-element {
+    min-width: 17.75rem;
+    height: 3.0625rem;
     display: inline-flex;
     margin-top: 1rem;
     border: solid 0.005988023952rem hsla(0, 0%, 0%, 0.10);
-    min-width: 17.75rem;
-    height: 3.0625rem;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.25rem 0.25rem hsla(0, 0%, 0%, 0.25);
@@ -195,13 +199,14 @@ html, body {
     font-weight: 300;
 }
 
+/* 6.-Comment box section */
 .comment-box {
     display: flex;
     max-width: 86.25rem;
     min-height: 30.625rem;
     margin: 70px auto;
     position: relative;
-    background-image: url("/Users/ricardoramirez/Desktop/hebrewWebsite/images/vintageBackground.jpg");
+    background-image: url("vintageBackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,13 +214,11 @@ html, body {
     margin-bottom: 54.2px;
     }
 
-
 .z-index-front-comment-box {
     background-color: white;
     width: 24.875rem;
     height: 24.875rem; 
     margin: 2.875rem 0 2.875rem 2.0625rem;
-
 }
 
 .z-index-front-comment-box p {
@@ -227,6 +230,7 @@ html, body {
     line-height: 2.5rem;
 }
 
+/* 7.-Footer section */
 .footer {
     width: 100%;
     min-height: 5.875rem;
@@ -242,12 +246,8 @@ html, body {
     font-size: 30px;
 }
 
-/* @media only screen and (min-width: 350px) and (max-width: 700px) {
-    html{
-        font-size: 14px;
-    }
-} */
 
+/* 8.-Media queries for different screen sizes */
 @media only screen and (min-width: 590px) and (max-width: 870px) {
     .writings-elements-with-superior-line {
         margin-top: 50px;
@@ -255,7 +255,7 @@ html, body {
     }
 }
 
-@media only screen and (min-width: 268px) and (max-width: 610px) {
+@media only screen and (min-width: 455px) and (max-width: 589px) {
     .search-box {
         margin-left: 10px;
     }
@@ -268,5 +268,46 @@ html, body {
         margin-top: 50px;
         margin-bottom: 30px;
     }
-    
+
+    .navbar p {
+        font-size: 1.7rem;
+    }
+
+    .western-wall h1 {
+        font-size: calc(0.8 * 4.375rem) ;
+    }
+
+    .western-wall h2 {
+        font-size: calc(0.8 * 3.125rem);
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 454px) {
+    html {
+        font-size: 10px;
+    }
+
+    .text-box-element {
+        min-width: 284px;
+        height: 3.0625rem;
+    }
+
+    .central-images{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .prophets-elements-with-superior-line {
+        margin-top: 40px;
+    }
+
+    .writings-elements-with-superior-line {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .navbar p {
+        font-size: 1.7rem;
+    }
 }
